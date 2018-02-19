@@ -1,0 +1,29 @@
+test: &default
+
+  # Credentials for REST APIs
+  client_id: AUPHSkSs0ekBu9W7xWAhehl7LtjqMPL50F7Zf1ciKDW6ysOeC2NO8WQOlUmyrfY9YfNZWPAiVGj5XtI_
+  client_secret: EJmdiRw5swFTZRoS3NZYwcRi_kEAyojePhkdlbvmOGPnRHwWRI9KMSc4XK4PKhrlzxmK2xmdtpnVrPEo
+
+  # Mode can be 'live' or 'sandbox'
+  mode: sandbox
+
+  # Credentials for Classic APIs
+  app_id: dummy_app
+  username: marioestdav@gmail.com
+  password: beAute10
+  signature: ALKy1VlP4TTkO-p7z.xyaShsSLyKA7cdP5xv9nVRUvOlEvNAdWNmalqo
+  # # With Certificate
+  # cert_path: "config/cert_key.pem"
+  sandbox_email_address: marioestdav-facilitator@gmail.com
+
+  # # IP Address
+  # ip_address: 127.0.0.1
+  # # HTTP Proxy
+  # http_proxy: http://proxy-ipaddress:3129/
+
+development:
+  <<: *default
+
+production:
+  <<: *default
+  mode: live
